@@ -1,0 +1,19 @@
+{
+  "name": "playwright-automation-swaglabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^22.7.8",
+    "playwright": "^1.48.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
