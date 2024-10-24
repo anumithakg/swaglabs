@@ -8,6 +8,6 @@ export default defineConfig({
     video: 'retain-on-failure',
   },
   testDir: './src/tests',
-  retries: 1,
+  retries: 0,
   timeout: 30000,
 });

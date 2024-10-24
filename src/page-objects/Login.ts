@@ -12,9 +12,9 @@ export class LoginPage {
     constructor(page: Page) {
         this.page = page;
         this.sauceLabLogo = this.page.locator("div.login_logo");
-        this.usernamePlaceholder = this.page.getByTestId('username');
-        this.passwordPlaceholder = this.page.getByTestId('password');
-        this.loginButton = this.page.getByTestId('login-button');
+        this.usernamePlaceholder = this.page.locator('#user-name');
+        this.passwordPlaceholder = this.page.locator('#password');
+        this.loginButton = this.page.locator('#login-button');
 
     }
 
@@ -27,8 +27,8 @@ export class LoginPage {
     }
 
     async enterCredentials(username: string, password: string) {
-        return await this.usernamePlaceholder.fill(username);
-        return await this.passwordPlaceholder.fill(password);
+         await this.usernamePlaceholder.fill(username);
+         await this.passwordPlaceholder.fill(password);
     }
 
     async clickLoginButton() {
